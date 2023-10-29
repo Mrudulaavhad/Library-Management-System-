@@ -1,0 +1,182 @@
+// // UserForm.scss
+
+// .user-form {
+//     max-width: 1400px;
+//     margin: 0 auto;
+//     padding: 20px;
+//     border: 1px solid #ccc;
+//     background-color: #f9f9f9;
+//     border-radius: 5px;
+   
+  
+//     h2 {
+//       font-size: 23px;
+//       margin-bottom: 23px;
+//     }
+  
+//     .form-table {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 27px;
+  
+//       .form-row {
+//         display: flex;
+//         flex-direction: row;
+//         gap: 39px;
+  
+//         .form-col {
+//           flex: 1;
+  
+//           label {
+//             font-weight: bold;
+//           }
+  
+//           input[type="text"],
+//           input[type="date"] {
+//             width: 100%;
+//             padding: 9px;
+//             border: 1px solid #ccc;
+//             border-radius: 4px;
+//             font-size: 16px;
+//           }
+  
+//           .error-message {
+//             color: red;
+//             margin-top: 5px;
+//           }
+//         }
+//       }
+  
+//       .add-user-button {
+//         background-color: #007bff;
+//         color: #fff;
+//         border: none;
+//         padding: 6px 10px  2px;
+//         border-radius: 6px;
+//         cursor: pointer;
+//         font-size: 16px;
+//         margin-top: 17px;
+  
+//         img {
+//           margin-right: 10px;
+//         }
+  
+//         &:hover {
+//           background-color: #0056b3;
+//         }
+//       }
+//     }
+//   }
+  
+
+
+.user-form {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+
+  h2 {
+    font-size: 23px;
+    margin-bottom: 23px;
+  }
+
+  .form-table {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+
+    .form-row {
+      display: flex;
+      flex-direction: row;
+      gap: 39px;
+
+      .form-col {
+        flex: 1;
+
+        label {
+          font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+          width: 100%;
+          padding: 9px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          font-size: 16px;
+        }
+
+        .error-message {
+          color: red;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .add-user-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 6px 10px 2px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 17px;
+
+      img {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
+
+// Media Queries for Responsiveness
+@media (max-width: 768px) {
+  .user-form {
+    padding: 10px;
+    max-width: 100%;
+
+    .form-table {
+      .form-row {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .add-user-button {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .user-form {
+    h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .form-table {
+      .form-row {
+        .form-col {
+          input[type="text"],
+          input[type="date"] {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .add-user-button {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

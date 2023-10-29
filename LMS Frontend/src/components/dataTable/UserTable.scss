@@ -1,0 +1,75 @@
+/* UserTable.scss */
+.usertable-container {
+
+  margin-top: 2px;
+    padding: 30px;
+    width: 96%;
+   
+}
+ 
+
+.table-wrapper {
+  height: 595px;
+  width: 100%;
+  justify-content: center; 
+  align-items: center;
+  margin-top: -5px;
+ 
+ 
+
+  
+  .Mui-even {
+    background-color: whitesmoke;
+    
+  }
+  
+  .Mui-odd {
+    background-color: #fff;
+   
+  }
+}
+
+
+  
+
+
+
+.usertable-title {
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 0px;
+  
+
+  .h3{
+    margin-left: 1%;
+  }
+
+}
+
+
+
+.add-User-button {
+  // margin-left: 150px; 
+  // padding: 1px; 
+
+  margin-left: 9%;
+  margin-top: -46px;
+  width: 84px;
+  height: 50px;
+  }
+
+
+.button {
+  padding: 6px 12px ; 
+  background-color: #0386CF;
+  color: #E0E0E0;
+  border: none;
+  border-radius: 9px;
+  
+}
+
+.alternate-row {
+  background-color: #f2f2f2;
+}
+
+
